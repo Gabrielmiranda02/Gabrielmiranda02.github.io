@@ -1,0 +1,76 @@
+
+/*Seletor para o corpo da página*/
+body {
+    /*Propriedades e valores*/
+    background-color: blueviolet;
+    color: cyan;
+ }
+ /*Seletor h1 e suas propriedades*/
+ h1 {
+    color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 400%;
+ }
+  
+ /*Seletor h2, propriedades e valores*/
+ h2 {
+    color: yellow;
+    font-family: serif;
+    font-size: 250%;
+ }
+  
+/*Importação de fontes do Google, deve ser
+feita na primeira linha do arquivo estilo.css*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Grandstander:wght@200&display=swap');
+
+
+/*Seletor h1 e suas propriedades*/
+h1 {
+   color: greenyellow;
+   font-family: 'Dancing Script', cursive;
+   font-size: 400%;
+   text-align: center;
+}
+
+ 
+/*Seletor h2, propriedades e valores*/
+h2 {
+   color: yellow;
+   font-family: 'Grandstander', cursive;
+   font-size: 250%;
+}
+
+/*Seletor da Imagem, propriedades e valores*/
+img {
+    height: 200px;/*Altura em pixels*/
+    width: 200px;/*Largura em pixels*/
+    box-shadow: 5px 5px 10px black;/*sombra*/
+    border-radius: 20px;/*Borda arredondada*/
+ }
+ 
+/*Identificador usa-se a HASH #*/
+img#imgPrincipal {
+    /*Centralização da Imagem*/
+    display: block; /*Quebra de linha*/
+    margin: 50px auto;
+    width: 50%;
+    height: auto;
+ }
+  
+ /*Classes usam o PONTO .*/
+ img.logo {
+    margin-left: 15%;
+    /*Arredondamento da imagem*/
+    border-radius: 50%;
+ }
+ 
+/*Propriedade deve estar dentro de um seletor*/
+
+
+
+ 
+
+
+
+
+ 
