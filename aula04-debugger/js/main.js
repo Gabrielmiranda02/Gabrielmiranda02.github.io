@@ -5,6 +5,10 @@
 let entradas = document.querySelectorAll('input');
 //Botão somar
 let btnSomar = document.querySelector('#btnSomar');
+//botão subtrair
+let btnSubtrair = document.querySelector('#btnSubtrair');
+//botão divisão
+let btnDividir = document.querySelector('#btndividir');
 //Parágrafo de resposta
 let resposta = document.querySelector('.resposta')
  
@@ -19,6 +23,7 @@ function pegarNum1() {
 function pegarNum2() {
    return num2.value;
 }
+
  
 //Verificando se as entradas estão vazias
 function verificarEntradasVazias() {
@@ -59,7 +64,44 @@ function atualizaResposta() {
         let soma = numero1 + numero2;
         resposta.textContent = `${numero1} + ${numero2} = ${soma}`;
     }
+
+}
+ //fução subtrair
+ function subtrair(){
+    if(verificarEntradasVazias()){
+        atualizaResposta();
+    }else{
+        atualizaResposta();
+    }
  }
+ 
+ 
+ 
+ btnSubtrair.addEventListener('click',subtrair);
+ 
+ function atualizaRespostaSubtrair() {
+    if(verificarEntradasVazias()){
+        resposta.classList.remove('certa');
+        resposta.classList.add('errada');
+        debugger; // pressionar a tecla f12 no navegador
+        resposta.textContent = "Erro: Preencha os dois números!"
+     }else{
+         resposta.classList.remove('errada');
+         resposta.classList.add('certa');
+         let numero1 = pegarNum1();
+         numero1 = parseFloat(numero1);//Convertendo para número Real
+         let numero2 = pegarNum2();
+         numero2 = parseFloat(numero2);//Convertendo para número Real
+         let subtrair = numero1 - numero2;
+         resposta.textContent = `${numero1} - ${numero2} = ${subtrair}`;
+     }
+  }
+  
+ 
+
+
+
+ 
  
  
  
