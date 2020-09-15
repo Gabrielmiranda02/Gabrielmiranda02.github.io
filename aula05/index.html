@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora</title>
+   <!-- Ligação entre o index e o estilo -->
+   <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header>   
+        <h1>calculadora</h1>
+        
+    </header>
+  
+    <!--Parte principal-->
+    <main class="container">
+        <input type="text" name="num1" id="num1" autofocus tabindex="1">
+       <input type="text" name="num2" id="num2" tabindex="2">
+       <button type="submit" id="btnSomar" tabindex="3">
+           Somar 
+       </button>
+       <button type="submit" id="btnSubtrair" tabindex="4">
+        subtrair 
+
+    </button>
+    <button type= "submit" id="btnDividir" tabindex="5">
+         dividir 
+    </button>
+    <button type="submit"id="btnMultiplicar">
+        Multiplicar
+    </button>
+
+
+        <p class="resposta">Resultado da operação</p>
+    </main>
+    <script src="./js/main.js"></script>
+ </body>
+ 
+</html>
