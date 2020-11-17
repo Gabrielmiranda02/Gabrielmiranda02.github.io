@@ -1,0 +1,11 @@
+article img {
+    height: 25em; /*Para caber três imagens*/
+   
+ }
+ .card {
+
+    margin-bottom: 20px;
+ }
+ .card:hover {
+ box-shadow: 0 0 10px gray ;
+ }
