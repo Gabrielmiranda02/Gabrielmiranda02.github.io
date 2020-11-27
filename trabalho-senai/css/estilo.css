@@ -1,0 +1,13 @@
+body {
+    background: rgb(255, 232, 186);
+    color: rgb(250, 92, 0);
+}
+
+img{
+    
+    width:400px;
+    display: block ;
+    margin: 0 auto;
+    border: indianred;
+    
+}
